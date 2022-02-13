@@ -1,0 +1,23 @@
+using System;
+namespace AreaAndEnvironment
+{
+   class Program 
+     {
+        static void Main(string[] args)
+        {   
+           Console.WriteLine("Dikdörtgen alan ve çevre hesaplama.");
+           Console.WriteLine("Dikdörtgen için kısa kenar ölçüsü yazınız: ");
+           
+           int kisaKenar , uzunKenar , alan, cevre ;
+           kisaKenar = Convert.ToInt32(Console.ReadLine());             // kullanıcıdan aldığımız veri string yapısında olucağından convert işlemi yaptık.
+           Console.WriteLine("Dikdörtgen için uzun kenar ölçüsü yazınız: ");
+           uzunKenar = Convert.ToInt32(Console.ReadLine());
+           
+           cevre = 2*(kısaKenar + uzunKenar);
+           alan = kisaKenar* uzunKenar;
+           
+           Console.WriteLine("Dikdörtgenin çevresi : {0} , alanı : {1}" , cevre, alan);
+           Console.Read();                                          // kodu çalıştırdığımızda açılan konsolun kullanıcıyı beklemesini söyledik.
+       }
+     }
+ }    
